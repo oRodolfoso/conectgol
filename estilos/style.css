@@ -8,33 +8,89 @@
     --cor2: #FABB4C;
     --cor3: 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-   
+    --fonte-destaque: squada one, san-serif;
     
 }
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     background-color: #3184F1;
-    height: 100vh;
+    height: 900vh;
 }
 
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #06213E;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #FABB4C;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
 
-div > h1{
-    background-color: #FABB4C;
-    height: 100px;
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
     width: 100%;
-    text-align: center;
-    font-family: Squada one;
-    color: #06213E;
-    font-size: 50px;
-    margin-top: 50px;
+    padding-left: 10px;
 }
 
-.icon{
-    padding:20px;
+.btn-expandir > i{
+    color: #FABB4C;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none
+}
+
+
+ul li.item-menu{
+    transition: 0.1s;
+}
+
+ul li.ativo{
+    background-color: #3184F1;
+}
+
+ul li.item-menu:hover{
+    background: #3184F1;
+}
+
+ul li.item-menu,  a{
+    color: #FABB4C;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 4%;
+    display: flex;
+    line-height: 25px;
+}
+
+ul li.item-menu  a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+    
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu,  a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
 }
