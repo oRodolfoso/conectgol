@@ -13,12 +13,11 @@
 }
 
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body{
+    margin: 0;
     background-color: #3184F1;
 }
 
@@ -43,15 +42,16 @@ body{
 
 .sidebar-header{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .logo-img{
     width: 130px;
     min-height: 35px;
-    transition: transform 0.4s;
     margin-left: 10px;
     margin-top: 20px;
+    transition: transform 0.4s;
+    margin-left: 10px;
 }
 
 .logo-img:hover{
@@ -84,7 +84,7 @@ body{
     background: #FABB4C;
 }
 
-.sidebar{
+.sidebar i{
     position: relative;
     font-size: 20px;
     transition: 0.2s;
@@ -131,4 +131,19 @@ body{
         transition: margin 0.4s;
         margin-left: 140px;
     }
+}
+
+
+
+@media (max-width: 480px){
+    .sidebar{
+        display: none;
+    }
+}
+
+
+
+.main{
+    margin-left: 6px;
+
 }
